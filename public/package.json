@@ -1,0 +1,9 @@
+{
+  "name": "clevermath",
+  "scripts": {
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "latest"
+  }
+}

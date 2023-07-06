@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "prod": "clevermath-official",
+    "dev": "clever-math-dev-v2"
+  }
+}

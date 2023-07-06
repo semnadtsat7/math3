@@ -1,0 +1,681 @@
+{
+  "districtInspector": [
+    {
+      "id": 1,
+      "name": "เขตตรวจ 1",
+      "percentage": 60,
+      "progress": 200,
+      "educationServiceArea": [
+        {
+          "type": "สพป",
+          "name": "กรุงเทพมหานคร",
+          "percentage": 45,
+          "progress": 140,
+          "school": [
+            {
+              "name": "ไทยรัฐวิทยา ๗๕ เฉลิมพระเกียรติ",
+              "educationServiceArea": "สพป.กรุงเทพ",
+              "schoolID": "adsfwfwefewfwfweffw",
+              "percentage": 90,
+              "progress": 260,
+              "classroom": [
+                {
+                  "name": "ประถมศึกษาปีที่ 4",
+                  "progress": 260,
+                  "classroom": [
+                    {
+                      "name": "ป.4/1",
+                      "progress": 80,
+                      "homeworkIssued": "33"
+                    },
+                    {
+                      "name": "ป.4/2",
+                      "progress": 120,
+                      "homeworkIssued": "40"
+                    },
+                    {
+                      "name": "ป.4/3",
+                      "progress": 30,
+                      "homeworkIssued": "30"
+                    }
+                  ]
+                },
+                {
+                  "name": "ประถมศึกษาปีที่ 5",
+                  "progress": 150,
+                  "classroom": [
+                    {
+                      "name": "ป.5/1",
+                      "progress": 80,
+                      "homeworkIssued": "33"
+                    },
+                    {
+                      "name": "ป.5/2",
+                      "progress": 120,
+                      "homeworkIssued": "40"
+                    },
+                    {
+                      "name": "ป.5/3",
+                      "progress": 30,
+                      "homeworkIssued": "30"
+                    }
+                  ]
+                },
+                {
+                  "name": "ประถมศึกษาปีที่ 6",
+                  "progress": 70,
+                  "classroom": [
+                    {
+                      "name": "ป.6/1",
+                      "progress": 80,
+                      "homeworkIssued": "33"
+                    },
+                    {
+                      "name": "ป.6/2",
+                      "progress": 120,
+                      "homeworkIssued": "40"
+                    },
+                    {
+                      "name": "ป.6/3",
+                      "progress": 30,
+                      "homeworkIssued": "30"
+                    }
+                  ]
+                }
+              ],
+              "teacher": [
+                {
+                  "prefix": "นาย",
+                  "firstName": "เวรุวัฒ",
+                  "lastName": "อิศรียา",
+                  "classrooms": "4",
+                  "progress": "70.8",
+                  "homeworkIssued": "124",
+                  "loginTime": "40.5",
+                  "classroom": [
+                    {
+                      "name": "ป.4/1",
+                      "progress": 80
+                    },
+                    {
+                      "name": "ป.4/2",
+                      "progress": 120
+                    },
+                    {
+                      "name": "ป.4/3",
+                      "progress": 30
+                    }
+                  ]
+                },
+                {
+                  "prefix": "นาง",
+                  "firstName": "เข็ม",
+                  "lastName": "อิยาพร",
+                  "classrooms": "5",
+                  "progress": "140.8",
+                  "homeworkIssued": "124",
+                  "loginTime": "140.5",
+                  "classroom": [
+                    {
+                      "name": "ป.5/1",
+                      "progress": 140
+                    },
+                    {
+                      "name": "ป.5/2",
+                      "progress": 160
+                    },
+                    {
+                      "name": "ป.5/3",
+                      "progress": 150
+                    }
+                  ]
+                },
+                {
+                  "prefix": "นาย",
+                  "firstName": "วัฒนา",
+                  "lastName": "เกรียงไกร",
+                  "classrooms": "4",
+                  "progress": "78",
+                  "homeworkIssued": "124",
+                  "loginTime": "20.5",
+                  "classroom": [
+                    {
+                      "name": "ป.6/1",
+                      "progress": 80
+                    },
+                    {
+                      "name": "ป.6/2",
+                      "progress": 120
+                    },
+                    {
+                      "name": "ป.6/3",
+                      "progress": 60
+                    }
+                  ]
+                },
+                {
+                  "prefix": "นาย",
+                  "firstName": "เมทัส",
+                  "lastName": "แสงสว่าง",
+                  "classrooms": "2",
+                  "progress": "40.8",
+                  "homeworkIssued": "160",
+                  "loginTime": "30.5",
+                  "classroom": [
+                    {
+                      "name": "ป.4/4",
+                      "progress": 80
+                    },
+                    {
+                      "name": "ป.4/5",
+                      "progress": 120
+                    },
+                    {
+                      "name": "ป.4/6",
+                      "progress": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "วัดเฉลิมพระเกียรติ(พิบูลบำรุง)",
+              "educationServiceArea": "สพป.กรุงเทพ",
+              "schoolID": "adsfwfwefewfwfwefeewfw",
+              "percentage": 70,
+              "progress": 150,
+              "classroom": [
+                {
+                  "name": "ป.4",
+                  "progress": 140,
+                  "classroom": [
+                    {
+                      "name": "ป.4/1",
+                      "progress": 80,
+                      "homeworkIssued": "33"
+                    },
+                    {
+                      "name": "ป.4/2",
+                      "progress": 120,
+                      "homeworkIssued": "40"
+                    },
+                    {
+                      "name": "ป.4/3",
+                      "progress": 30,
+                      "homeworkIssued": "30"
+                    }
+                  ]
+                },
+                {
+                  "name": "ป.5",
+                  "progress": 80,
+                  "classroom": [
+                    {
+                      "name": "ป.4/1",
+                      "progress": 80,
+                      "homeworkIssued": "33"
+                    },
+                    {
+                      "name": "ป.4/2",
+                      "progress": 120,
+                      "homeworkIssued": "40"
+                    },
+                    {
+                      "name": "ป.4/3",
+                      "progress": 30,
+                      "homeworkIssued": "30"
+                    }
+                  ]
+                },
+                {
+                  "name": "ป.6",
+                  "progress": 160,
+                  "classroom": [
+                    {
+                      "name": "ป.4/1",
+                      "progress": 160,
+                      "homeworkIssued": "33"
+                    },
+                    {
+                      "name": "ป.4/2",
+                      "progress": 200,
+                      "homeworkIssued": "40"
+                    },
+                    {
+                      "name": "ป.4/3",
+                      "progress": 80,
+                      "homeworkIssued": "30"
+                    }
+                  ]
+                }
+              ],
+              "teacher": [
+                {
+                  "prefix": "นาย",
+                  "firstName": "เด่นชัย",
+                  "lastName": "พูวสิท",
+                  "classrooms": "4",
+                  "progress": "50.8",
+                  "homeworkIssued": "84",
+                  "loginTime": "20.5",
+                  "classroom": [
+                    {
+                      "name": "ป.4/1",
+                      "progress": 70
+                    },
+                    {
+                      "name": "ป.4/2",
+                      "progress": 50
+                    },
+                    {
+                      "name": "ป.4/3",
+                      "progress": 40
+                    }
+                  ]
+                },
+                {
+                  "prefix": "นาง",
+                  "firstName": "บัวขวัญ",
+                  "lastName": "พรชัย",
+                  "classrooms": "5",
+                  "progress": "140.8",
+                  "homeworkIssued": "124",
+                  "loginTime": "140.5",
+                  "classroom": [
+                    {
+                      "name": "ป.5/1",
+                      "progress": 140
+                    },
+                    {
+                      "name": "ป.5/2",
+                      "progress": 120
+                    },
+                    {
+                      "name": "ป.5/3",
+                      "progress": 160
+                    }
+                  ]
+                },
+                {
+                  "prefix": "นาย",
+                  "firstName": "นาแสง",
+                  "lastName": "ภูมไร",
+                  "classrooms": "4",
+                  "progress": "88",
+                  "homeworkIssued": "124",
+                  "loginTime": "20.5",
+                  "classroom": [
+                    {
+                      "name": "ป.6/1",
+                      "progress": 88
+                    },
+                    {
+                      "name": "ป.6/2",
+                      "progress": 99
+                    },
+                    {
+                      "name": "ป.6/3",
+                      "progress": 77
+                    }
+                  ]
+                },
+                {
+                  "prefix": "นาง",
+                  "firstName": "เมทานี",
+                  "lastName": "แสงมืด",
+                  "classrooms": "2",
+                  "progress": "50.8",
+                  "homeworkIssued": "160",
+                  "loginTime": "30.5",
+                  "classroom": [
+                    {
+                      "name": "ป.4/4",
+                      "progress": 100
+                    },
+                    {
+                      "name": "ป.4/5",
+                      "progress": 20
+                    },
+                    {
+                      "name": "ป.4/6",
+                      "progress": 50
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ชุมชนวัดราษฎร์นิยม",
+              "educationServiceArea": "สพป.กรุงเทพ",
+              "schoolID": "adsfwfwefesddswfwfweffw",
+              "percentage": 60,
+              "progress": 80,
+              "classroom": [
+                {
+                  "name": "ป.4",
+                  "progress": 60
+                },
+                {
+                  "name": "ป.5",
+                  "progress": 90
+                },
+                {
+                  "name": "ป.6",
+                  "progress": 80
+                }
+              ]
+            },
+            {
+              "name": "วัดนาค",
+              "progress": 90
+            },
+            {
+              "name": "วัดม่วงหวาน(ส่วนกระบวนยุทธประชาสรรค์)",
+              "progress": 40
+            },
+            {
+              "name": "วัดหนองหอย",
+              "progress": 80,
+              "educationServiceArea": "สพป.กรุงเทพ เขต 1"
+            },
+            {
+              "name": "กรุงเทพคริสเตียน",
+              "progress": 80,
+              "educationServiceArea": "สพป.กรุงเทพ เขต 1"
+            }
+          ]
+        },
+        {
+          "type": "สพป",
+          "name": "นนทบุรี เขต 1",
+          "progress": "100"
+        },
+        {
+          "type": "สพป",
+          "name": "นนทบุรี เขต 2",
+          "progress": "150"
+        },
+        {
+          "type": "สพป",
+          "name": "พระนครศรีอยุธยา เขต 1",
+          "progress": "200"
+        },
+        {
+          "type": "สพป",
+          "name": "พระนครศรีอยุธยา เขต 2",
+          "progress": "250"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "เขตตรวจ 2",
+      "percentage": 30,
+      "progress": 180,
+      "educationServiceArea": [
+        {
+          "type": "สพป",
+          "name": "ชัยนาท",
+          "percentage": 45,
+          "progress": "80"
+        },
+        {
+          "type": "สพป",
+          "name": "ปทุมธานี เขต 1",
+          "percentage": 60,
+          "progress": "50"
+        },
+        {
+          "type": "สพป",
+          "name": "ปทุมธานี เขต 2",
+          "percentage": 90,
+          "progress": "100"
+        },
+        {
+          "type": "สพป",
+          "name": "ลพบุรี เขต 1",
+          "percentage": 20,
+          "progress": "120"
+        },
+        {
+          "type": "สพป",
+          "name": "ลพบุรี เขต 2",
+          "percentage": 30,
+          "progress": "40"
+        },
+        {
+          "type": "สพป",
+          "name": "สระบุรี เขต 1",
+          "percentage": 50,
+          "progress": "80"
+        },
+        {
+          "type": "สพป",
+          "name": "สระบุรี เขต 2",
+          "percentage": 70,
+          "progress": "120"
+        },
+        {
+          "type": "สพป",
+          "name": "สิงห์บุรี",
+          "percentage": 45,
+          "progress": "17"
+        },
+        {
+          "type": "สพป",
+          "name": "อ่างทอง",
+          "percentage": 10,
+          "progress": "22"
+        },
+        {
+          "type": "สพป",
+          "name": "อุทัยธานี เขต 1",
+          "percentage": 65,
+          "progress": "20"
+        },
+        {
+          "type": "สพป",
+          "name": "อุทัยธานี เขต 2",
+          "percentage": 95,
+          "progress": "17"
+        }
+      ],
+      "school": [
+        {
+          "schoolName": "คริสตัง",
+          "progress": 110
+        },
+        {
+          "schoolName": "คอนแวน",
+          "progress": 10
+        },
+        {
+          "schoolName": "อุดม",
+          "progress": 80
+        },
+        {
+          "schoolName": "ถวาย",
+          "progress": 140
+        },
+        {
+          "schoolName": "หนองคาย",
+          "progress": 200
+        },
+        {
+          "schoolName": "หนองหอย",
+          "progress": 220
+        }
+      ],
+      "esa": [
+        {
+          "name": "สพป.ชัยนาท"
+        },
+        {
+          "name": "สพป.ปทุมธานี เขต 1"
+        },
+        {
+          "name": "สพป.ปทุมธานี เขต 2"
+        },
+        {
+          "name": "สพป.ลพบุรี เขต 1"
+        },
+        {
+          "name": "สพป.ลพบุรี เขต 2"
+        },
+        {
+          "name": "สพป.สระบุรี เขต 1"
+        },
+        {
+          "name": "สพป.สระบุรี เขต 2"
+        },
+        {
+          "name": "สพป.สิงห์บุรี"
+        },
+        {
+          "name": "สพป.อ่างทอง"
+        },
+        {
+          "name": "สพป.อุทัยธานี เขต 1"
+        },
+        {
+          "name": "สพป.อุทัยธานี เขต 2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "เขตตรวจ 3",
+      "progress": 160,
+      "esa": [
+        {
+          "name": "สพป.กาญจนบุรี เขต 1"
+        },
+        {
+          "name": "สพป.กาญจนบุรี เขต 2"
+        },
+        {
+          "name": "สพป.กาญจนบุรี เขต 3"
+        },
+        {
+          "name": "สพปกาญจนบุรี เขต 4"
+        },
+        {
+          "name": "สพป.นครปฐม เขต 1"
+        },
+        {
+          "name": "สพป.นครปฐม เขต 2"
+        },
+        {
+          "name": "สพป.ราชบุรี เขต 1"
+        },
+        {
+          "name": "สพป.ราชบุรี เขต 2"
+        },
+        {
+          "name": "สพป.สุพรรณบุรี เขต 1"
+        },
+        {
+          "name": "สพป.สุพรรณบุรี เขต 2"
+        },
+        {
+          "name": "สพป.สุพรรณบุรี เขต 3"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "เขตตรวจ 4",
+      "progress": 140,
+      "esa": [
+        {
+          "name": "สพป.ประจวบคีรีขันธ์ เขต 1"
+        },
+        {
+          "name": "สพป.ประจวบคีรีขันธ์ เขต 2"
+        },
+        {
+          "name": "สพป.เพชรบุรี เขต 1"
+        },
+        {
+          "name": "สพป.เพชรบุรี เขต 2"
+        },
+        {
+          "name": "สพป.สมุทรสงคราม"
+        },
+        {
+          "name": "สพป.สมุทรสาคร"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "progress": 120,
+      "name": "เขตตรวจ 5"
+    },
+    {
+      "id": 6,
+      "progress": 70,
+      "name": "เขตตรวจ 6"
+    },
+    {
+      "id": 7,
+      "progress": 60,
+      "name": "เขตตรวจ 7"
+    },
+    {
+      "id": 8,
+      "progress": 40,
+      "name": "เขตตรวจ 8"
+    },
+    {
+      "id": 9,
+      "progress": 80,
+      "name": "เขตตรวจ 9"
+    },
+    {
+      "id": 10,
+      "progress": 30,
+      "name": "เขตตรวจ 10"
+    },
+    {
+      "id": 11,
+      "progress": 110,
+      "name": "เขตตรวจ 11"
+    },
+    {
+      "id": 12,
+      "progress": 120,
+      "name": "เขตตรวจ 12"
+    },
+    {
+      "id": 13,
+      "progress": 90,
+      "name": "เขตตรวจ 13"
+    },
+    {
+      "id": 14,
+      "progress": 60,
+      "name": "เขตตรวจ 14"
+    },
+    {
+      "id": 15,
+      "progress": 240,
+      "name": "เขตตรวจ 15"
+    },
+    {
+      "id": 16,
+      "progress": 140,
+      "name": "เขตตรวจ 16"
+    },
+    {
+      "id": 17,
+      "progress": 80,
+      "name": "เขตตรวจ 17"
+    },
+    {
+      "id": 18,
+      "progress": 100,
+      "name": "เขตตรวจ 18"
+    }
+  ]
+}

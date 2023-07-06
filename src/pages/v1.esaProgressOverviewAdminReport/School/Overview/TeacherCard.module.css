@@ -1,0 +1,81 @@
+.showHideButtonText {
+  font-size: "0.8rem";
+  color: #64799d;
+}
+
+.showHideButtonText:hover {
+  font-size: "0.8rem";
+  color: #ffffff;
+}
+
+.showHideButton {
+  width: "200px";
+  height: "30px";
+  margin: "0";
+  border: "2px solid #B6CCF3";
+  border-radius: "4px";
+  filter: "drop-shadow(0px 0px 8px rgba(137, 137, 137, 0.25))";
+  margin-bottom: 0;
+  background: "linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 99.98%, #D7D7D7 99.99%, rgba(219, 219, 219, 0) 100%)";
+}
+
+.showHideButton:hover {
+  background: #5c7ebc;
+  color: #ffffff;
+  border: "2px solid #B6CCF3";
+  border-radius: "4px";
+}
+
+.card {
+  display: inline-block;
+  margin: 5px;
+  width: 200px;
+  height: 45px;
+}
+
+.container {
+  width: 200px;
+  height: 45px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+}
+
+.text {
+  color: #000000;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  font-size: 1rem;
+  margin: 0px;
+}
+
+.blue {
+  color: #6380b9;
+}
+
+.alignItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alignContent {
+  display: flex;
+  width: 1000px;
+}
+
+.alignTextItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.alignTextItemNoCursor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  user-select: none;
+}

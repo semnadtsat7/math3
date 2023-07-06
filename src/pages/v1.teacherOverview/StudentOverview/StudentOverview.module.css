@@ -1,0 +1,112 @@
+.alignItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alignContent {
+  display: flex;
+  width: 1000px;
+}
+
+.alignTextItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+/*modal แก้ไขสัดส่วนคะแนน*/
+.Icon1 {
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 0px;
+  cursor: pointer;
+  color: #1c4e91;
+}
+
+/* see index.css 
+The modal will not come under the direct CSS. 
+You have to write the things in a global CSS file then it will work.
+
+.modalStyle .ant-modal-title {
+  font-size: 20px; 
+  color: #1c4e91;
+  font-weight: lighter;
+}
+*/
+.modalHeader {
+  font-size: 20px;
+  color: #1c4e91;
+}
+
+.modalHeaderB {
+  font-size: 20px;
+  color: #000000;
+}
+
+.modalFooter {
+  font-size: 14px;
+  color: #b42020;
+  margin-right: 10px;
+}
+
+.modalButton {
+  background-color: #e8f0fd;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: thin;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.modalCancelButton {
+  width: 100px;
+  height: 30px;
+  background-color: #e8f0fd;
+  border-radius: 4px;
+  border-style: none;
+  color: #ffffff;
+  background-color: #ff4d4f;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.modalCancelButton:hover {
+  background-color: #a80b0b90;
+}
+
+.modalSubmitButton {
+  width: 100px;
+  height: 30px;
+  background-color: #e8f0fd;
+  border-radius: 4px;
+  border-style: none;
+  color: #ffffff;
+  background-color: #1890ff;
+  cursor: pointer;
+}
+
+.modalSubmitButton:hover {
+  background-color: #1c4f9191;
+}
+
+.modalContainer hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  border-top: 1px solid rgb(242, 242, 242);
+}
+
+.modalContainer p, button {
+  margin-top: 10px;
+}
+
+.modalContainer p {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/***********************/

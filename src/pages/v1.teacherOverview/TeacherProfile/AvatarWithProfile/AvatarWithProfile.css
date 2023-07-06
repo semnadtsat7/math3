@@ -1,0 +1,52 @@
+.AvatarWithProfile-Information h1 {
+    font-size: 22px;
+    color: #1c4e91;
+}
+
+.AvatarWithProfile-Information b {
+    color: #2391ff;
+}
+
+.AvatarWithProfile-Information p {
+    margin: 1px;
+}
+
+.AvatarWithProfile-Text-Secondary {
+    color: #9e9e9e;
+    text-align: center;
+    font-size: 12px
+}
+
+.AvatarWithProfile-Statistic-Card {
+    height: 90px;
+}
+
+.AvatarWithProfile-Statistic-Card p:last-child {
+    font-size: 24px;
+    color: #1c4e91;
+}
+
+
+/* sm */
+@media only screen and (max-width: 576px) {
+    .AvatarWithProfile-Statistic-Card {
+        height: 140px;
+    }
+
+    .AvatarWithProfile-Statistic-Card h4 {
+        margin: 10px 0 0 0;
+        text-align: center !important;
+    }
+
+    .AvatarWithProfile-Statistic-Card p {
+        text-align: center !important;
+        margin: 10px 0 0 0;
+    }
+
+    .AvatarWithProfile-Statistic-Card p:last-child {
+        padding: 10px 0 0 0;
+    }
+}
+
+/* xs */
+@media only screen and (max-width: 480px) {}

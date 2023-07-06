@@ -1,0 +1,28 @@
+.card {
+  display: inline-block;
+  margin: 5px;
+  width: 200px;
+  height: 45px;
+}
+
+.container {
+  width: 200px;
+  height: 45px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+}
+
+span.title {
+  color: #000000;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  font-size: 1rem;
+  margin: 0px;
+}
+
+span.blue {
+  color: #6380B9;
+}
+

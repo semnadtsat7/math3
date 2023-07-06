@@ -1,0 +1,25 @@
+.modal-header {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr; /* Adjust the column widths as needed */
+    text-align: center;
+  }
+  
+  .modal-content {
+    display: grid;
+    grid-template-columns:30px 100px 2fr 4fr ; /* Adjust the column widths as needed */
+    text-align: start;
+    align-items: start;
+
+  }
+  .modal-content > div {
+    text-align: start;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  body
+  {
+  margin:0;
+  padding:0;
+  word-break: break-all;
+  }

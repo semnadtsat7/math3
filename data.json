@@ -1,0 +1,232 @@
+[{
+        "edit": true,
+        "create": true,
+        "view": true,
+        "name": "โรงเรียน",
+        "type": "schools",
+        "options": [{
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            }
+        ]
+    },
+    {
+        "view": true,
+        "edit": true,
+        "name": "จังหวัด",
+        "type": "provinces",
+        "options": [{
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "applyList": [],
+        "create": false,
+        "view": false,
+        "edit": false,
+        "name": "เครือ",
+        "type": "affiliations",
+        "options": [{
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "แก้ไขข้อมูล",
+                "value": "edit",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "view": true,
+        "create": true,
+        "name": "อำเภอ",
+        "type": "districts",
+        "options": [{
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            },
+            {
+                "label": "ดูข้อมูล",
+                "value": "view",
+                "checked": true
+            },
+            {
+                "label": "เพิ่มข้อมูล",
+                "value": "create",
+                "checked": true
+            }
+        ]
+    }
+]

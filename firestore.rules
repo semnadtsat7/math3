@@ -1,0 +1,162 @@
+service cloud.firestore {
+  match /databases/{database}/documents 
+  {
+    match /users/{document=**} {
+    	allow read,write:  if true;
+    }  
+    match /quizzes/{document=**} {
+    	allow read,write:  if true;
+    }
+    match /students/{document=**} {
+    	allow read:  if true;
+    }
+    match /teachers/{document=**} {
+    	allow read:  if true;
+    }
+    match /roles/{document=**} {
+    	allow read:  if true;
+    }
+    
+    match /teachers/{teacherId} 
+    {
+      function isOwner()
+      {
+        return get(/databases/$(database)/documents/teachers/$(teacherId)).data.owner == request.auth.uid &&
+                get(/databases/$(database)/documents/teachers/$(teacherId)).data.isActive == true;
+        // return teacherId in get(/databases/$(database)/documents/users/$(request.auth.uid)).data.spaces;
+      }
+
+      allow read: if request.auth.uid == resource.data.owner;
+
+      match /groups/{groupId}
+      {
+        allow read: if isOwner();
+        
+        match /students/{studentId}
+        {
+          allow read: if isOwner();
+        }
+        
+        match /sheets/{sheetId}
+        {
+          allow read: if isOwner();
+        }
+        
+        match /missions/{missionId}
+        {
+          allow read: if isOwner();
+        }
+        
+        match /maps/{mapId}
+        {
+          allow read: if isOwner();
+          
+          match /sheets/{sheetId}
+          {
+            allow read: if isOwner();
+          }
+        }
+      }
+
+      match /students/{studentId}
+      {
+        allow read: if isOwner();
+
+        match /scores/{scoreId}
+        {
+          allow read: if isOwner();
+        }
+        
+        match /rewards/{rewardId}
+        {
+          allow read: if isOwner();
+        }
+        
+        match /missions/{missionId}
+        {
+          allow read: if isOwner();
+        }
+        
+        match /maps/{mapId}
+        {
+          allow read: if isOwner();
+          
+          match /sheets/{sheetId}
+          {
+            allow read: if isOwner();
+            
+            match /statistics/{stat}
+            {
+              allow read: if isOwner();
+            }
+          }
+        }
+        
+        match /groups/{groupId}
+        {
+          allow read: if isOwner();
+        }
+      }
+      
+      match /maps/{mapId}
+      {
+        allow read: if isOwner();
+
+        match /sheets/{sheetId}
+        {
+          allow read: if isOwner();
+        }
+        
+        match /pretest/{pretestVersion}
+        {
+          allow read: if isOwner();
+        }
+        
+        match /posttest/{pretestVersion}
+        {
+          allow read: if isOwner();
+        }
+      }
+
+      match /sheets/{sheetId}
+      {
+        allow read: if isOwner();
+      }
+      
+      match /rewards/{rewardId}
+      {
+        allow read: if isOwner();
+      }
+      
+      match /student_rewards/{rewardId}
+      {
+        allow read: if isOwner();
+      }
+      
+      match /missions/{missionId}
+      {
+        allow read: if isOwner();
+      }
+      
+      match /aggs_v02/{docID}
+      {
+        allow read: if isOwner();
+      }
+      
+      match /aggs_table_v01/{docID}
+      {
+        allow read: if isOwner();
+      }
+      
+      match /queries/{query}
+      {
+        allow read: if isOwner();
+        
+        match /sessions/{sessionId}
+        {
+          allow read, create: if isOwner();
+        }
+      }
+    }
+  }
+}

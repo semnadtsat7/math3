@@ -1,0 +1,7 @@
+.error {
+    border: 2px solid red
+}
+
+.ant-modal-body .ant-table-wrapper .ant-spin-container .ant-table .ant-table-content .ant-table-body .ant-table-thead .ant-table-selection-column .ant-table-header-column div{
+    display: none;
+}

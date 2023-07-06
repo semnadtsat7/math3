@@ -1,0 +1,439 @@
+import classes from "./Overview.module.css";
+
+import React, { useRef, useEffect, useState } from "react";
+
+import { Col, Row, Card, Box, Menu } from "../../../../core/components";
+
+import {
+  CardWithTitle,
+  CardWithTitleNoIcon,
+  DropdownForm,
+  DropdownFormNoTitle,
+  VerticalBarChartJsEsaProgress,
+} from "../../../../components/Statistics";
+
+import ProgressCard from "./ProgressCard";
+
+//unused
+import EsaRankingCard from "./EsaRankingCard";
+import SchoolRankingCard from "./SchoolRankingCard";
+import TeacherRankingCard from "./TeacherRankingCard";
+
+import Parent from "../../../../components/Parent";
+import Header from "../../../students.ts.v1/Header";
+
+import * as districtInspectData from "./districtInspectData.json";
+
+import { SchoolService } from "../../../../services/Statistics";
+
+export default function PageESAProgressOverview() {
+  const parent = useRef(Parent);
+
+  //data เขตตรวจ 1 - 18
+  const [districtInspector, setDistrictInspector] = useState({
+    loading: true,
+    data: {},
+  });
+  const [chosenDistrictInspectorData, setChosenDistrictInspectorData] =
+    useState({
+      loading: true,
+      data: {},
+    });
+
+  useEffect(() => {
+    setDistrictInspector(districtInspectData.default.districtInspector);
+  }, []);
+
+  const onClick = () => {
+    console.log(districtInspector);
+    console.log(chosenDistrictInspectorData);
+  };
+
+  //เปลี่ยนสี background ของbar ขึ้นกับ value range ของคะแนนเขตตรวจ
+  const getBarChartBackgroundColor = (item) => {
+    let color;
+    if (item.score === 0) {
+      color = "grey";
+    } else if (item.score >= 1 && item.score < 50) {
+      color = "#C22E1A";
+    } else if (item.score >= 50 && item.score < 100) {
+      color = "#D26C0D";
+    } else if (item.score >= 100 && item.score < 150) {
+      color = "#EFB622";
+    } else if (item.score >= 150 && item.score < 200) {
+      color = "#AEB024";
+    } else if (item.score >= 200) {
+      color = "#7D9C54";
+    }
+    return color;
+  };
+
+  //bar chart คะแนนเขตตรวจ loading
+  const [
+    barChartStatisticsByDistricInspector,
+    setBarChartStatisticsByDistricInspector,
+  ] = useState({
+    loading: true,
+  });
+
+  const [chosenDistricInspectorName, setChosenDistricInspectorName] =
+    useState(null);
+
+  const onChosenDistricInspectorName = ({ key }) => {
+    let item = "";
+    Object.entries(districtInspector).forEach((data) => {
+      if (data?.[1]?.name === key) {
+        item = data?.[1];
+      }
+    });
+    setChosenDistricInspectorName(item?.name);
+    setChosenDistrictInspectorData(item);
+    setBarChartStatisticsByDistricInspector({ loading: true });
+    setTimeout(() => {
+      setBarChartStatisticsByDistricInspector({ loading: false });
+    }, 500);
+  };
+
+  //set รายงานความก้าวหน้า item แรก (default)
+  useEffect(() => {
+    if (districtInspector.loading !== true) {
+      setChosenDistrictInspectorData(districtInspector?.[0]);
+      setChosenDistricInspectorName(districtInspector?.[0]?.name);
+      setBarChartStatisticsByDistricInspector(false);
+    }
+  }, [districtInspector]);
+
+  return (
+    <Parent ref={parent}>
+      <Header
+        onMenuClick={() => parent?.current?.toggleMenu()}
+        title="ความก้าวหน้าเขต"
+      />
+
+      <Box>
+        <div className="Overview">
+          <Card bordered={false} className="w-100 Overview-Container">
+            <Row gutter={[8, 8]} type="flex">
+              <Col span={24}>
+                <Box mt="2">
+                  <Row gutter={[8, 8]} type="flex">
+                    <Col span={24} offset={0}>
+                      <CardWithTitleNoIcon
+                        title={
+                          <>
+                            <div className={classes.alignItems}>
+                              <div className={classes.alignTextItem}>
+                                <div className={classes.alignContent}>
+                                  <p
+                                    style={{
+                                      marginBottom: "0",
+                                    }}
+                                  >
+                                    รายงานความก้าวหน้า
+                                  </p>
+                                  <div
+                                    style={{
+                                      display: "flex",
+                                      alignContent: "center",
+                                      justifyContent: "center",
+                                      width: "100px",
+                                      marginLeft: "25px",
+                                    }}
+                                  >
+                                    <DropdownFormNoTitle
+                                      placeholder={
+                                        chosenDistricInspectorName ??
+                                        "เลือกเขตตรวจ"
+                                      }
+                                      dropdownspan={4}
+                                      md={8}
+                                      lg={7}
+                                      loading={districtInspector?.loading}
+                                      overlay={
+                                        districtInspector?.loading ? (
+                                          <></>
+                                        ) : (
+                                          <Menu
+                                            onClick={
+                                              onChosenDistricInspectorName
+                                            }
+                                          >
+                                            {Object.entries(
+                                              districtInspector
+                                            ).map((key) => {
+                                              return (
+                                                <Menu.Item
+                                                  key={
+                                                    Object.values(key)[1].name
+                                                  }
+                                                >
+                                                  {Object.values(key)[1].name}
+                                                </Menu.Item>
+                                              );
+                                            })}
+                                          </Menu>
+                                        )
+                                      }
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </>
+                        }
+                      >
+                        <br />
+                        <div onClick={onClick}>test</div>
+                        <VerticalBarChartJsEsaProgress
+                          height={250}
+                          width={2500}
+                          loading={
+                            barChartStatisticsByDistricInspector?.loading
+                          }
+                          labels={
+                            chosenDistrictInspectorData.loading
+                              ? []
+                              : chosenDistrictInspectorData?.school?.map(
+                                  (item) => {
+                                    return [
+                                      item?.schoolName,
+                                      item?.educationServiceArea || "",
+                                    ];
+                                  }
+                                )
+                          }
+                          items={
+                            chosenDistrictInspectorData?.loading
+                              ? []
+                              : chosenDistrictInspectorData?.school?.map(
+                                  (item) => {
+                                    return item?.score;
+                                  }
+                                )
+                          }
+                          color={
+                            chosenDistrictInspectorData?.loading
+                              ? []
+                              : chosenDistrictInspectorData?.school?.map(
+                                  (item) => {
+                                    return getBarChartBackgroundColor(item);
+                                  }
+                                )
+                          }
+                        />
+                      </CardWithTitleNoIcon>
+                    </Col>
+                    <Col span={24} offset={0}>
+                      <CardWithTitleNoIcon title="ข้อมูลความก้าวหน้าทั้งหมด">
+                        <ProgressCard
+                          title="เขตตรวจทั้งหมด"
+                          districtInspectorNumber="9"
+                        />
+                        <ProgressCard
+                          title="เขตพื้นที่ทั้งหมด"
+                          districtInspectorNumber="18"
+                        />
+                        <ProgressCard
+                          title="โรงเรียน"
+                          districtInspectorNumber="5"
+                        />
+                        <br />
+                        <div
+                          style={{
+                            display: "flex",
+                            alignContent: "left",
+                            justifyContent: "left",
+                            marginLeft: "0px",
+                            marginTop: "0px",
+                          }}
+                        >
+                          <span
+                            style={{
+                              marginLeft: "0px",
+                              marginTop: "0px",
+                            }}
+                          >
+                            <DropdownFormNoTitle
+                              placeholder={
+                                (
+                                  <>
+                                    {chosenDistricInspectorName}{" "}
+                                    <button
+                                      style={{
+                                        margin: "0px",
+                                        padding: "2px",
+                                        backgroundColor: "#4CA309",
+                                        border: "none",
+                                        borderRadius: "4px",
+                                        color: "white",
+                                        fontSize: "0.8em",
+                                        width: "60px",
+                                      }}
+                                    >
+                                      80.5%
+                                    </button>
+                                  </>
+                                ) ?? (
+                                  <>
+                                    กรุณาเลือกเขตตรวจ <button>80.5%</button>
+                                  </>
+                                )
+                              }
+                              titlespan={0}
+                              dropdownspan={4}
+                              md={8}
+                              lg={7}
+                              loading={districtInspector?.loading}
+                              overlay={
+                                districtInspector?.loading ? (
+                                  <></>
+                                ) : (
+                                  <Menu onClick={onChosenDistricInspectorName}>
+                                    {Object.entries(districtInspector).map(
+                                      (key) => {
+                                        return (
+                                          <Menu.Item
+                                            key={Object.values(key)[1].name}
+                                          >
+                                            {Object.values(key)[1].name}
+                                          </Menu.Item>
+                                        );
+                                      }
+                                    )}
+                                  </Menu>
+                                )
+                              }
+                            />
+                          </span>
+                          <span
+                            style={{
+                              marginLeft: "30px",
+                              marginTop: "0px",
+                            }}
+                          >
+                            <DropdownFormNoTitle
+                              placeholder={
+                                (
+                                  <>
+                                    {chosenDistricInspectorName}{" "}
+                                    <button
+                                      style={{
+                                        margin: "0px",
+                                        padding: "2px",
+                                        backgroundColor: "#4CA309",
+                                        border: "none",
+                                        borderRadius: "4px",
+                                        color: "white",
+                                        fontSize: "0.8em",
+                                        width: "60px",
+                                      }}
+                                    >
+                                      80.5%
+                                    </button>
+                                  </>
+                                ) ?? (
+                                  <>
+                                    กรุณาเลือกเขตพื้นที่ <button>80.5%</button>
+                                  </>
+                                )
+                              }
+                              titlespan={0}
+                              dropdownspan={4}
+                              md={8}
+                              lg={7}
+                              loading={districtInspector?.loading}
+                              overlay={
+                                districtInspector?.loading ? (
+                                  <></>
+                                ) : (
+                                  <Menu onClick={onChosenDistricInspectorName}>
+                                    {Object.entries(districtInspector).map(
+                                      (key) => {
+                                        return (
+                                          <Menu.Item
+                                            key={Object.values(key)[1].name}
+                                          >
+                                            {Object.values(key)[1].name}
+                                          </Menu.Item>
+                                        );
+                                      }
+                                    )}
+                                  </Menu>
+                                )
+                              }
+                            />
+                          </span>
+                          <span
+                            style={{
+                              marginLeft: "30px",
+                              marginTop: "0px",
+                            }}
+                          >
+                            <DropdownFormNoTitle
+                              placeholder={
+                                (
+                                  <>
+                                    {chosenDistricInspectorName}{" "}
+                                    <button
+                                      style={{
+                                        margin: "0px",
+                                        padding: "2px",
+                                        backgroundColor: "#4CA309",
+                                        border: "none",
+                                        borderRadius: "4px",
+                                        color: "white",
+                                        fontSize: "0.8em",
+                                        width: "60px",
+                                      }}
+                                    >
+                                      80.5%
+                                    </button>
+                                  </>
+                                ) ?? (
+                                  <>
+                                    กรุณาเลือกโรงเรียน <button>80.5%</button>
+                                  </>
+                                )
+                              }
+                              titlespan={0}
+                              dropdownspan={4}
+                              md={8}
+                              lg={7}
+                              loading={districtInspector?.loading}
+                              overlay={
+                                districtInspector?.loading ? (
+                                  <></>
+                                ) : (
+                                  <Menu onClick={onChosenDistricInspectorName}>
+                                    {Object.entries(districtInspector).map(
+                                      (key) => {
+                                        return (
+                                          <Menu.Item
+                                            key={Object.values(key)[1].name}
+                                          >
+                                            {Object.values(key)[1].name}
+                                          </Menu.Item>
+                                        );
+                                      }
+                                    )}
+                                  </Menu>
+                                )
+                              }
+                            />
+                          </span>
+                        </div>
+                      </CardWithTitleNoIcon>
+                    </Col>
+                    <Col span={24} offset={0}>
+                      <CardWithTitleNoIcon title="ข้อมูลโรงเรียน"></CardWithTitleNoIcon>
+                    </Col>
+                  </Row>
+                </Box>
+              </Col>
+            </Row>
+          </Card>
+        </div>
+      </Box>
+    </Parent>
+  );
+}

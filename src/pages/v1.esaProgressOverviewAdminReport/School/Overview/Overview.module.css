@@ -1,0 +1,103 @@
+.Overview-Container {
+  background-color: #fbfbfb;
+}
+
+.alignItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alignContent {
+  display: flex;
+  width: 1000px;
+}
+
+.alignTextItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  user-select: none;
+}
+
+.alignTextItemNoCursor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  user-select: none;
+}
+
+.alignContentRight {
+  display: flex;
+  width: 1000px;
+  justify-content: flex-end;
+}
+
+.showHideButtonText {
+  font-size: "0.8rem";
+  color: #64799d;
+}
+
+.showHideButtonText:hover {
+  font-size: "0.8rem";
+  color: #ffffff;
+}
+
+.showHideButton {
+  width: "200px";
+  height: "30px";
+  margin: "0";
+  border: "2px solid #B6CCF3";
+  border-radius: "4px";
+  background: #ffffff;
+}
+
+.showHideButton:hover {
+  background: #5c7ebc;
+  color: #ffffff;
+  border: "2px solid #B6CCF3";
+  border-radius: "4px";
+}
+
+.tableBorder {
+  border: 1px solid;
+  text-align: right;
+  width: 120px;
+  padding-right: 5px;
+}
+
+.tableHeader {
+  border: 1px solid;
+  text-align: center;
+  width: 120px;
+  padding-right: 5px;
+}
+
+.tableBorder2 {
+  border: 1px solid;
+  text-align: right;
+  width: 200px;
+  padding-right: 5px;
+}
+
+.tableHeader2 {
+  border: 1px solid;
+  text-align: center;
+  width: 200px;
+  padding-right: 5px;
+}
+
+.tableBorder3 {
+  border: 1px solid;
+  text-align: right;
+  width: 400px;
+  padding-right: 5px;
+}
+
+.tableHeader3 {
+  border: 1px solid;
+  text-align: center;
+  width: 400px;
+  padding-right: 5px;
+}

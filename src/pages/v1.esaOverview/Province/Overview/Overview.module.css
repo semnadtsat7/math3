@@ -1,0 +1,24 @@
+.Overview {}
+
+.Overview-Container {
+    background-color: #fbfbfb;
+}
+
+.alignItems {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .alignContent {
+    display: flex;
+    width: 1000px;
+  }
+  
+  .alignTextItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  

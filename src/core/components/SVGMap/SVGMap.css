@@ -1,0 +1,98 @@
+.svg-map {
+  width: 100%;
+  height: auto;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.svg-map__location {
+  fill: #a1d99b;
+  cursor: pointer;
+}
+
+.svg-map__location:focus,
+.svg-map__location:hover {
+  fill: #b8e2b3;
+  outline: 0;
+}
+
+.svg-map__location[aria-checked=true] {
+  fill: #f4bc44;
+}
+
+.svg-map__location-excellent {
+  fill: rgb(57, 181, 74);
+  cursor: pointer;
+}
+
+.svg-map__location-excellent:focus,
+.svg-map__location-excellent:hover {
+  fill: #b8e2b3;
+  outline: 0;
+}
+
+.svg-map__location-excellent[aria-checked=true] {
+  fill: #f4bc44;
+}
+
+.svg-map__location-great {
+  fill: rgb(114, 203, 126);
+  cursor: pointer;
+}
+
+.svg-map__location-great:focus,
+.svg-map__location-great:hover {
+  fill: #b8e2b3;
+  outline: 0;
+}
+
+.svg-map__location-great[aria-checked=true] {
+  fill: #f4bc44;
+}
+
+.svg-map__location-good {
+  fill: rgb(140, 198, 63);
+  cursor: pointer;
+}
+
+.svg-map__location-good:focus,
+.svg-map__location-good:hover {
+  fill: #b8e2b3;
+  outline: 0;
+}
+
+.svg-map__location-good[aria-checked=true] {
+  fill: #f4bc44;
+}
+
+.svg-map__location-fair {
+  fill: rgb(251, 176, 59);
+  cursor: pointer;
+}
+
+.svg-map__location-fair:focus,
+.svg-map__location-fair:hover {
+  fill: #f8db9d;
+  outline: 0;
+}
+
+.svg-map__location-fair[aria-checked=true] {
+  fill: #a78846;
+}
+
+.svg-map__location-developing {
+  fill: rgb(238, 87, 33);
+  cursor: pointer;
+}
+
+.svg-map__location-developing:focus,
+.svg-map__location-developing:hover {
+  fill: rgb(236, 129, 90);
+  outline: 0;
+}
+
+.svg-map__location-developing[aria-checked=true] {
+  fill: rgb(143, 74, 49);
+}

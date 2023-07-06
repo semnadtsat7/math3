@@ -1,0 +1,52 @@
+.svg-map {
+    width: 100%;
+    height: auto;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.svg-map__location {
+    fill: #a1d99b;
+    cursor: pointer;
+}
+
+.svg-map__location:focus,
+.svg-map__location:hover {
+    fill: #b8e2b3;
+    outline: 0;
+}
+
+.svg-map__location[aria-checked=true] {
+    fill: #f4bc44;
+}
+
+.App-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    padding: 5px 5px 5px 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+
+.App-popup-tooltip {
+    min-width: 150px;
+    width: auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(28, 78, 145);
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.App-popup-tooltip p{
+    font-size: 8pt;
+    margin: 0;
+}

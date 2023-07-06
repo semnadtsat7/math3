@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "c97294e8-411a-49bf-9d9f-620ea3c38a4c",
+		"name": "progessReport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21499381"
+	},
+	"item": [
+		{
+			"name": "progessReport-getClassKPIByTeacherId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"teacherId\": \"mNxgh4A8CfQrhq5y1odYRBHRttk1\",\r\n        \"filter\": {\r\n            \"time\": {\r\n                \"startTime\": \"2020-07-29 16:26:19\",\r\n                \"endTime\": \"2022-08-11 16:28:53\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast1-clevermath-official.cloudfunctions.net/progessReport-getClassKPIByTeacherId",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-clevermath-official",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"progessReport-getClassKPIByTeacherId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "progessReport-getTeacherKPIByUserId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"userId\": \"mNxgh4A8CfQrhq5y1odYRBHRttk1\",\r\n        \"filter\": {\r\n            \"time\": {\r\n                \"startTime\": \"2020-07-29 16:26:19\",\r\n                \"endTime\": \"2022-08-11 16:28:53\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast1-clevermath-official.cloudfunctions.net/progessReport-getTeacherKPIByUserId",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-clevermath-official",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"progessReport-getTeacherKPIByUserId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "progessReport-getTeachersInfoBySchoolId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"schoolId\": \"evIeEr9HXS3hvmPYipgU\",\r\n        \"filter\": {\r\n            \"time\": {\r\n                \"startTime\": \"2020-07-29 16:26:19\",\r\n                \"endTime\": \"2022-08-11 16:28:53\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast1-clevermath-official.cloudfunctions.net/progessReport-getTeachersInfoBySchoolId",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-clevermath-official",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"progessReport-getTeachersInfoBySchoolId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "progessReport-getSchoolInfoBySchoolId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"schoolId\": \"evIeEr9HXS3hvmPYipgU\",\r\n        \"filter\": {\r\n            \"time\": {\r\n                \"startTime\": \"2020-07-29 16:26:19\",\r\n                \"endTime\": \"2022-08-11 16:28:53\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast1-clevermath-official.cloudfunctions.net/progessReport-getSchoolInfoBySchoolId",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-clevermath-official",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"progessReport-getSchoolInfoBySchoolId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "progessReport-getSchoolsInfoByESA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"esa\": \"สพป.พระนครศรีอยุธยา เขต 2\",\r\n        \"filter\": {\r\n            \"time\": {\r\n                \"startTime\": \"2020-07-29 16:26:19\",\r\n                \"endTime\": \"2022-08-11 16:28:53\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast1-clevermath-official.cloudfunctions.net/progessReport-getSchoolsInfoByESA",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-clevermath-official",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"progessReport-getSchoolsInfoByESA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "progessReport-getGIInfoByGIId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"gi\": \"5\",\r\n        \"filter\": {\r\n            \"time\": {\r\n                \"startTime\": \"2020-07-29 16:26:19\",\r\n                \"endTime\": \"2022-08-11 16:28:53\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast1-clevermath-official.cloudfunctions.net/progessReport-getGIInfoByGIId",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-clevermath-official",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"progessReport-getGIInfoByGIId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "progessReport-getProgessReport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"filter\": {\r\n            \"time\": {\r\n                \"startTime\": \"2020-07-29 16:26:19\",\r\n                \"endTime\": \"2023-08-11 16:28:53\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://asia-southeast1-clevermath-official.cloudfunctions.net/progessReport-getProgessReport",
+					"protocol": "https",
+					"host": [
+						"asia-southeast1-clevermath-official",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"progessReport-getProgessReport"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjVkMzQwZGRiYzNjNWJhY2M0Y2VlMWZiOWQxNmU5ODM3ZWM2MTYzZWIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY2xldmVybWF0aC1vZmZpY2lhbCIsImF1ZCI6ImNsZXZlcm1hdGgtb2ZmaWNpYWwiLCJhdXRoX3RpbWUiOjE2NjYyNjMzNzMsInVzZXJfaWQiOiJkMzlWUlJieFFMUHRadHdJTnRlUm91NlhqWEoyIiwic3ViIjoiZDM5VlJSYnhRTFB0WnR3SU50ZVJvdTZYalhKMiIsImlhdCI6MTY2NjI2MzM3MywiZXhwIjoxNjY2MjY2OTczLCJlbWFpbCI6InVzZXJfYWRtaW5AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInVzZXJfYWRtaW5AZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.e8vZ02OahqYFfhFSak8g9xzha3cqGTAet13bev2tWFhmaoi0Z1_TLcBtzIUtZsfqgfoJ_JuNFYN6E_22KT62gh5QDoh0x7Te8Fj65amXrKEA1lKSbyIuF0L2gHpckp5ka33QnEDFNHdmomBhbWF15J6Zj4BNQbHus1Jm7wJGqPQKd7hdCNiDmsrrepsgmYqhaajeHIn6R2_IzQtNMUp47TaCyGbTV4k2puZI4re024J2JYagbAEEuRaLcehMEaOVzzguPIFdr5o_MrgUOBe2BMyObPXOjAjKyUEf1qkEve4qryZBd2P_xXNv90XAlV9p6f-lqdWE2YFbGN3SGWvs0Q",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
